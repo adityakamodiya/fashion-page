@@ -30,11 +30,13 @@
     padding: 0 5px;
     justify-content: center;
 }
-.p p{
+.p p {
     border: 1px solid black;
     padding: 0 8px;
     margin: 0 5px;
-}button {
+    text-transform: uppercase;
+}
+/* button {
     background-color: green;
     margin: 15px 0;
     width: 40%;
@@ -42,4 +44,19 @@
     padding: 4px 0;
     color: white;
     border: none;
+} */
+.a{
+    margin-top: 15px;
+}.a a {
+    text-decoration: none;
+    /* margin-top: 5px; */
+    font-size: 22px;
+    padding: 5px;
+    color: white;
+    background: green;
+    border: 1px solid;
+}
+.fa-solid, .fas {
+    padding: 0px 10px;
+    font-weight: 900;
 }
