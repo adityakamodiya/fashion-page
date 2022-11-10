@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .boxes {
     display: flex;
@@ -47,7 +49,11 @@
 } */
 .a{
     margin-top: 15px;
-}.a a {
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.a a {
     text-decoration: none;
     /* margin-top: 5px; */
     font-size: 22px;
@@ -55,8 +61,59 @@
     color: white;
     background: green;
     border: 1px solid;
+    position: relative;
 }
 .fa-solid, .fas {
     padding: 0px 10px;
     font-weight: 900;
 }
+/* .a a::before{
+content: "";
+position: absolute;
+top: 1px;
+left: 1px;
+height: 100%;
+width: 100%;
+} */
+.a a:hover{   
+    /* background-color: grey; */
+    
+  background-color: red;
+  color: black;
+  
+}
+@media all and (max-width:1100px) and (min-width:1000px){
+    h1{
+        font-size: 28px;
+    
+    }
+}
+@media all and (max-width:1000px){
+    .boxes{
+            flex-wrap: wrap;        
+    }
+    .box{
+        width: 48%;
+    
+    }
+}
+@media all and (max-width:700px){
+    
+    .box{
+        width:95%;
+    }
+}
+
+/* .a{
+    position: relative;
+}
+ul{
+    /* display: none; */
+    /* position: relative; */
+}
+.a:hover ul{
+    /* display: flex; */
+    position: absolute;
+    
+
+} */
